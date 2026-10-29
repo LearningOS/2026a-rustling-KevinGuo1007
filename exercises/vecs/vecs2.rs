@@ -1,7 +1,6 @@
 // vecs2.rs
-//
-// A Vec of even numbers is given. Your task is to complete the loop so that
-// each number in the Vec is multiplied by 2.
+// A Vec of even numbers is given. Your task is to complete the loop
+// so that each number in the Vec is multiplied by 2.
 //
 // Make me pass the test!
 //
@@ -23,7 +22,7 @@ fn vec_map(v: &Vec<i32>) -> Vec<i32> {
     v.iter().map(|element| {
         // TODO: Do the same thing as above - but instead of mutating the
         // Vec, you can just return the new number!
-        element * 2
+        *element * 2
     }).collect()
 }
 
